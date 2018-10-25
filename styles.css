@@ -26,3 +26,9 @@ h1 {
 .list-item {
     color: red;
 }
+
+li {
+    font-family: cursive;
+    font-size: 100px;
+
+}
