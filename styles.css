@@ -35,3 +35,11 @@ li {
     font-size: 100px;
 
 }
+
+.task-input {
+    width: 400px;
+}
+
+li:nth-child(even){
+    color:black;
+   }

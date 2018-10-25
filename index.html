@@ -14,14 +14,14 @@
 <body>
     <div id="vue-app">
         <h1>MY 2-DO LIST</h1>
-
+        <h3>Total # Current tasks: {{tasks.length}}</h3>
 
         <!-- INPUT LABEL -->
         
-            <label for="todoitem">Item:</label>
+            <label for="todoitem">Task:</label>
 
             <!-- INPUT -->
-            <input type="text" v-model="input" />
+            <input type="text" class="task-input" v-model="input" placeholder= "Sofware programming.."/>
             <br>
             <!-- INPUT BUTTON -->
             <button type="button"  v-on:click="add()">Initialize Task</button>
@@ -31,9 +31,7 @@
         
         <!-- RESULTS ONTO DOM -->
         <div class="output">
-            <h4>List of Tasks to do too</h4>
-<h3>Total # Current tasks: {{tasks.length}}</h3>
-
+            <h2><u>List of Tasks to do:</u></h2>
             <ul class="list-group">
 
                 <li v-for="(item, i) in tasks" :key="i" class="list-item">
