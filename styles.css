@@ -17,3 +17,12 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
+
+
+.list-group {
+    border: 1px solid #333;
+}
+
+.list-item {
+    color: red;
+}
