@@ -4,14 +4,15 @@ new Vue({
 
   //Data portion
   data: {
-     tasks: [],
-     input: '' 
+    tasks: [],
+    input: ''
   },
-//function portion
-methods: {
-add () {
-  this.tasks.push(this.input);
-  this.input = "";
-}
-}
+  //function portion
+  methods: {
+    add() {
+      this.tasks.push(this.input);
+      this.input = "";
+      console.log('added')
+    }
+  }
 })
