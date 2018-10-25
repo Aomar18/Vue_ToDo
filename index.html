@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="client.js"></script>
+    <script src="app.js"></script>
     <link href="styles.css" rel="stylesheet">
     <title>Ahmed's Vue To Do </title>
 </head>
@@ -12,6 +12,9 @@
 <h1><strong>TODO LIST</strong></h1>
 <label for="todoitem">Item:</label>
 <input type="text" v-model="input"/> 
+<br>
+<button type="button" v-on:click="add()">Initialize Task</button> 
+
 
 
 
