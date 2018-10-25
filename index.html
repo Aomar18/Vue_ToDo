@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-    <script src="app.js"></script>
+   
     <link href="styles.css" rel="stylesheet">
     <title>V To D </title>
 </head>
+
 <body>
-<div id="vue-app">
-<h1><strong> MY 2-DO LIST</strong></h1>
+    <div id="vue-app">
+        <h1><strong> MY 2-DO LIST</strong></h1>
 
 
-<!-- INPUT LABEL -->
-<label for="todoitem">Item:</label>
+        <!-- INPUT LABEL -->
+        <label for="todoitem">Item:</label>
 
-<!-- INPUT -->
-<input type="text" v-model="input"/> 
-<br>
-<!-- INPUT BUTTON -->
-<button type="button" v-on:click="add()">Initialize Task</button> 
-
-
-<!-- RESULTS ONTO DOM -->
-<div class="output">
-<h4>List of Tasks to do too</h4>
+        <!-- INPUT -->
+        <input type="text" v-model="input" />
+        <br>
+        <!-- INPUT BUTTON -->
+        <button type="button" v-on:click="add()">Initialize Task</button>
 
 
-<ul class="list-group">
-
-<li v-for="(item, i) in tasks" :key="i" class="list-item">
-
-    {{i}}: {{item}}
-
-</li>
+        <!-- RESULTS ONTO DOM -->
+        <div class="output">
+            <h4>List of Tasks to do too</h4>
 
 
-</ul>
+            <ul class="list-group">
+
+                <li v-for="(item, i) in tasks" :key="i" class="list-item">
+
+                    {{i}}: {{item}}
+
+                </li>
+
+
+            </ul>
 
 
 
-</div>
-</div>>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
