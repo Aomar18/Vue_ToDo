@@ -13,6 +13,10 @@ new Vue({
       this.tasks.push(this.input);
       this.input = "";
       console.log('added')
-    }
-  }
+    },
+    erase() {
+      this.tasks.pop(this.input)
+      console.log('erased')
+    },
+  },
 })
