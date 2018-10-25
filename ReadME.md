@@ -1,1 +1,1 @@
-To do List Built with Vue.
+Todo List App Built with Vue.

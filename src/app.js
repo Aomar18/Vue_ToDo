@@ -19,6 +19,11 @@ new Vue({
       console.log('erased')
     },
 
-    
+
   },
+
+
+  
 })
+
+
