@@ -1,0 +1,19 @@
+html {
+    background: linear-gradient(
+        to top right,
+        skyblue,
+        skyblue,
+        skyblue,
+        black,
+        black
+
+    );
+    text-align: center;
+}
+
+h1 {
+    
+ color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
