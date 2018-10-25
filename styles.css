@@ -23,7 +23,7 @@ h3 {
 
 
 .list-group {
-    border: 1px solid #333;
+    border: 10px dashed silver;
 }
 
 .list-item {
@@ -42,4 +42,8 @@ li {
 
 li:nth-child(even){
     color:black;
+   }
+
+h2 {
+       text-decoration: underline;
    }

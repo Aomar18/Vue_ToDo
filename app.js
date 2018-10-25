@@ -18,5 +18,7 @@ new Vue({
       this.tasks.pop(this.input)
       console.log('erased')
     },
+
+    
   },
 })
