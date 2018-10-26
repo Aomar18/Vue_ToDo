@@ -12,17 +12,26 @@
     <div id="vue-app">
         <h1>MY 2-DO LIST</h1>
         <h3>Total # of Current tasks: {{tasks.length}}</h3>
+        
+        <!-- ADD TASK BUTTON -->
+        <button type="button" v-on:click="add()">Initialize Task</button>
+        <!-- ADD TASK TO BEGINNING OF LIST -->
+        <button type="button" v-on:click="addFirst()">Add First</button>
         <!-- INPUT LABEL -->
+        <br>
+        <br>
         <label for="todoitem">Task:</label>
         <!-- INPUT FIELD -->
         <input type="text" class="task-input" v-model="input" placeholder="Sofware programming.." />
         <br>
         <!-- INPUT TO MANIPULATE TASK LIST-->
-        <!-- ADD TASK BUTTON -->
-        <button type="button" v-on:click="add()">Initialize Task</button>
+        
         <br>
-        <!-- REMOVE TASK BUTTON -->
+        <!-- REMOVE MOST RECENT TASK BUTTON -->
         <button type="button" v-on:click="erase()">Erase Task</button>
+        <!-- REMOVE FIRST TASK BUTTON-->
+        <button type="button" v-on:click="eraseFirst()">Delete First</button>
+
 
         <!-- LIST ON DOM -->
         <div class="output">
