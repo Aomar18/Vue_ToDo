@@ -7,33 +7,30 @@ html {
         black,
         black,
         black
-
     );
     text-align: center;
 }
 
 h1 {   
  color: red;
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+ font-family: Impact;
 }
 
 h3 {
     color: white;
 }
 
-
 .list-group {
     border: 10px dashed silver;
 }
 
 .list-item {
-    color: red;
+    color: white;
 }
 
 li {
-    font-family: cursive;
-    font-size: 100px;
-
+    font-family: monospace;
+    font-size: 25px;
 }
 
 .task-input {
@@ -45,5 +42,5 @@ li:nth-child(even){
    }
 
 h2 {
-       text-decoration: underline;
+    text-decoration: underline;
    }
