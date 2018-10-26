@@ -44,3 +44,19 @@ li:nth-child(even){
 h2 {
     text-decoration: underline;
    }
+
+.highlight {
+    color: gold;
+    text-decoration-line: line-through;
+}
+
+.deleteAll-button{
+    border-color: red;
+    border-radius: 80px;
+    background-color: red;
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    font-family: bold;
+
+}

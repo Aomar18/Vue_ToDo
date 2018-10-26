@@ -4,29 +4,42 @@ new Vue({
   //Data portion
   data: {
     tasks: ['initial', 'secondary'],
-    input: ''
+    input: '',
+    highlight: true
   },
   //function portion
   methods: {
-    add() {
+    addLast() {
       this.tasks.push(this.input);
       this.input = "";
       console.log('added new task to end of list ')
     },
-    addFirst(){
+    addFirst() {
       this.tasks.unshift(this.input)
-      this.input=""
+      this.input = ""
       console.log('add task to beginning of list')
     },
-    erase() {
+    eraseLast() {
       this.tasks.pop(this.input)
       console.log('erased most recent task')
     },
     eraseFirst() {
       this.tasks.shift(this.input)
       console.log('remove first')
+    },
+    deleteAll() {
+      this.tasks.splice(this.tasks)
     }
   },
+
+  computed: {
+    compClasses: function () {
+      return {
+        highlight: this.highlight
+      }
+    },
+
+  }
 })
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,39 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <title>VU3 T0 D0 </title>
+
 <body>
     <div id="vue-app">
         <h1>MY 2-DO LIST</h1>
         <h3>Total # of Current tasks: {{tasks.length}}</h3>
-        
         <!-- ADD TASK BUTTON -->
-        <button type="button" v-on:click="add()">Initialize Task</button>
+        <button type="button" @click="addLast()">Initialize Task</button>
         <!-- ADD TASK TO BEGINNING OF LIST -->
         <button type="button" v-on:click="addFirst()">Add First</button>
         <!-- INPUT LABEL -->
         <br>
         <br>
-        <label for="todoitem">Task:</label>
         <!-- INPUT FIELD -->
+        <label for="todoitem">Task:</label>
         <input type="text" class="task-input" v-model="input" placeholder="Sofware programming.." />
         <br>
-        <!-- INPUT TO MANIPULATE TASK LIST-->
-        
         <br>
+        <!-- INPUT TO MANIPULATE TASK LIST-->
         <!-- REMOVE MOST RECENT TASK BUTTON -->
-        <button type="button" v-on:click="erase()">Erase Task</button>
+        <button type="button" @click="eraseLast()">Erase Task</button>
         <!-- REMOVE FIRST TASK BUTTON-->
         <button type="button" v-on:click="eraseFirst()">Delete First</button>
-
-
+        <br>
+        <br>
+        <!-- REMOVE ALL TASKS BUTTON -->
+        <button class="deleteAll-button" type="button" v-on:dblclick="deleteAll()">CLEAR</button>
         <!-- LIST ON DOM -->
         <div class="output">
             <h2>List of Tasks to do:</h2>
             <ul class="list-group">
                 <!-- MAPS LIST ITEMS IN LOOP -->
-                <li v-for="(item, i) in tasks" :key="i" class="list-item">
-
-                    <strong> {{i}}: {{item}} </strong>
-                    
+                <li v-for="(item, i) in tasks" :key="i" class="list-item" v-bind:class="{highlight: !highlight}"v-on:click="highlight=!highlight">
+                    <strong > {{i}}: {{item}} </strong>
                 </li>
             </ul>
         </div>
@@ -49,4 +49,5 @@
     <!-- SOURCE JAVASCRIPT -->
     <script src="app.js"></script>
 </body>
+
 </html>
