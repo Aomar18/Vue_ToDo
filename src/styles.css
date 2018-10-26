@@ -1,5 +1,6 @@
 html {
-    background: linear-gradient(
+    text-align: center;
+    background: linear-gradient( 
         to top right,
         skyblue,
         skyblue,
@@ -8,12 +9,16 @@ html {
         black,
         black
     );
-    text-align: center;
+    
 }
 
 h1 {   
- color: red;
- font-family: Impact;
+    color: red;
+    font-family: Impact;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 h3 {
@@ -33,17 +38,13 @@ li {
     font-size: 25px;
 }
 
-.task-input {
-    width: 400px;
-}
-
 li:nth-child(even){
     color:black;
    }
 
-h2 {
-    text-decoration: underline;
-   }
+.task-input {
+    width: 400px;
+}
 
 .highlight {
     color: gold;
@@ -51,12 +52,25 @@ h2 {
 }
 
 .deleteAll-button{
-    border-color: red;
-    border-radius: 80px;
-    background-color: red;
     height: 30px;
     width: 70px;
     font-size: 15px;
     font-family: bold;
-
+    border-radius: 80px;
+    border-color: red;
+    background-color: red;
 }
+
+
+
+
+
+/* .restoreAll-button{
+    border-color: blue;
+    border-radius: 80px;
+    background-color: blue;
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    font-family: bold;
+} */

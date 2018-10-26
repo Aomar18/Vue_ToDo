@@ -1,5 +1,5 @@
 new Vue({
-  //html tag source
+  //html tag source portion
   el: '#vue-app',
   //Data portion
   data: {
@@ -29,9 +29,12 @@ new Vue({
     },
     deleteAll() {
       this.tasks.splice(this.tasks)
+    },
+    restoreAll() {
+      this.tasks(tasks)
     }
   },
-
+  //computed function portion
   computed: {
     compClasses: function () {
       return {
